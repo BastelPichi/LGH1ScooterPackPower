@@ -369,17 +369,7 @@ void setup() {
 }
 
 void loop() {
-   int buttonState = digitalRead(pushButton);
-    
-    if (buttonState == HIGH) {
-     digitalWrite(PA2, HIGH);
-    JumpBatteryWakeOFF();
-    } 
-   if  (buttonState == LOW)  {
-    digitalWrite(PA2, LOW);
-    JumpBatteryWakeON();
-  }
-  
+  JumpBatteryWakeON();
  CANReceiveSerial();
  //JumpBatteryWake();
 
